@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mission Control — NextERA TURO</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="topbar"><div class="brand"><h1>Mission Control</h1></div><nav class="nav"><a href="index.html">Home</a><a href="library.html">Library</a></nav></header>
+  <main class="container">
+    <h2>NASA DONKI CME / SEP Events (Mock Data)</h2>
+    <canvas id="cmeChart" width="600" height="300"></canvas>
+  </main>
+  <script>
+    const ctx = document.getElementById('cmeChart').getContext('2d');
+    new Chart(ctx, {type:'line',data:{labels:['Day1','Day2','Day3','Day4','Day5'],datasets:[{label:'CME Speed (km/s)',data:[800,900,1200,1100,950],borderColor:'orange',fill:false},{label:'SEP Flux',data:[2,4,6,4,3],borderColor:'cyan',fill:false}]},options:{responsive:true}});
+  </script>
+</body>
+</html>
