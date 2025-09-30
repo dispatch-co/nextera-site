@@ -1,1 +1,85 @@
-body{background:#000;color:#fff;font-family:sans-serif;margin:0} .topbar{padding:10px;background:#111;color:#fff;display:flex;justify-content:space-between} .nav a{color:#fff;margin-left:10px;text-decoration:none} .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px} .container{padding:20px}
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: rgba(10, 10, 20, 0.9);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #1e90ff;
+}
+
+header h1 {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #00f7ff, #ff00d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: #00f7ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff00d4;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(90deg, #00f7ff, #ff00d4);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00f7ff, 0 0 25px #ff00d4;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #ff00d4, #00f7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(10, 10, 20, 0.9);
+  border-top: 2px solid #ff00d4;
+  font-size: 0.9rem;
+  color: #aaa;
+}
